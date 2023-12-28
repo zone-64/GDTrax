@@ -16,6 +16,7 @@ For example:
 ```
   extends Node
   class_name BaseMap
+
   func _ready():
     GdTrax.load_track("snd/mus/meadows.mp3", 1.0, true)
 ```   
