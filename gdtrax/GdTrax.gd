@@ -42,6 +42,7 @@ func stop():
 func unload():
 	if Player.stream != null:
 		Player.stream = null
+		stop()
 
 func _ready():
 	name = "GD Trax Instance: Initializing"
