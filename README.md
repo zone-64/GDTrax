@@ -14,6 +14,8 @@ This function loads the audio file for use. If you wish to play the file after i
 
 For example:
 ```
+  extends Node
+  class_name BaseMap
   func _ready():
     GdTrax.load_track("snd/mus/meadows.mp3", 1.0, true)
 ```   
