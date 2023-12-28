@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckqq44dh1dknk"]
+
+[ext_resource type="Script" path="res://UI.gd" id="1_xmg5f"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_sm2ln"]
+font_size = 33
+
+[node name="GDTrax Demo" type="Node2D"]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_right = 1175.0
+offset_bottom = 656.0
+alignment = 1
+script = ExtResource("1_xmg5f")
+
+[node name="Title" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Now Playing: Lotus Waters - Yume 2kki (sped-up + reverb)"
+label_settings = SubResource("LabelSettings_sm2ln")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="LinkToWebsite" type="LinkButton" parent="VBoxContainer"]
+layout_mode = 2
+text = "Check out my other stuff"
+underline = 1
+uri = "https://zone-64.github.io"
