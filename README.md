@@ -4,11 +4,16 @@ A music handler for Godot 4.x
 Make sure to add the scripts path to the autoload in your project settings before you do anything else
 
 
-## Basic Commands
+## Basic Functions
 
-- load_track(path: String, pitch: float = 1.0, force_play: bool = false)
-  Loads the audio file without actually playing it. If you wish to play the audio file then you would have to set the force_play parametre to true.
-  For example:
-    func _ready():
-      GdTrax.load_track("music/town.mp3", 1.0, true)
+If a function parameter is surrounded by <> then its an optional parameter
+
+GdTrax.load_track(path, <pitch>, <force_play>)
+
+This function loads the audio file for use. If you wish to play the file after its finished loading then set the force_play parameter to true
+
+For example:
+
+  func _ready():
+    GdTrax.load_track("snd/mus/meadows.mp3", 1.0, true)
     
